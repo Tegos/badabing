@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <script src="jquery/jquery-2.1.1.min.js"/>
+
+        <css src="fonts/font-awesome/css/font-awesome.css"/>
+
+        <css src="js/owl.carousel/owl.carousel.css"/>
+        <script src="js/owl.carousel/owl.carousel.min.js"/>
+
+        <css src="bootstrap/css/bootstrap.css"/>
+        <css src="bootstrap/css/bootstrap-theme.css"/>
+        <css src="bootstrap/css/bootstrap-theme.css.map"/>
+        <script src="bootstrap/js/bootstrap.js"/>
+
+
+        <css src="css/my-style.css"/>
+        <css src="css/popup.css"/>
+        <css src="css/find-store.css"/>
+        <css src="css/find-your-store.css"/>
+        <script src="js/script.js"/>
+
+
+        <script src="js/jquery.ui-slider.js"/>
+
+        <script src="js/script.js"/>
+        <script src="js/popup.js"/>
+    </head>
+</page>

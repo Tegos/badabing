@@ -1,0 +1,123 @@
+body.cms-find-your-store.cms-page-view.page-layout-1column div.page-wrapper div.sections.nav-sections {
+  display: none;
+}
+
+p#sub-sub-title {
+  font-size: 20px;
+  font-family: PT Sans Narrow Bold;
+}
+
+p#nearest {
+  font-family: PTSansWebRegular;
+}
+
+p#nearest a, p.green-padding span.green a {
+  color: green;
+  font-family: PTSansWebRegular;
+  font-size: 15px;
+}
+
+p#nearest a:hover, p.green-padding span.green a:hover {
+  text-decoration: none;
+}
+
+div.col-sm-6.main-col {
+  padding: 0;
+  width: 47.5%;
+}
+
+div.col-sm-6.main-col#map {
+  margin-left: 2.5%;
+}
+
+/*div.row.my-main-content {
+  padding-left: 1.25%;
+  padding-right: 1.25%;
+}*/
+
+div.col-sm-12.sub-col {
+  background-color: #EEEEEE;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+div.col-sm-12.sub-col div.col-sm-4 p {
+  margin-bottom: 2px;
+}
+
+div.col-sm-12.sub-col div.col-sm-12.find-title {
+  font-size: 3rem;
+  font-family: PT Sans Narrow Bold;
+  padding-bottom: 20px;
+  border-bottom: 2px dotted #ccc;
+}
+
+div.col-sm-12.sub-col .col-sm-4 {
+  margin-top: 20px;
+}
+
+.my-bold {
+  font-family: PTSansWebBold;
+  font-size: 15px;
+}
+
+.my-normal {
+  font-family: PTSansWebRegular;
+  font-size: 15px;
+}
+
+div.col-sm-6.main-col div.col-sm-12.sub-col div.col-sm-4 p.green-padding {
+  padding-bottom: 25px;
+}
+
+div.red-block.col-sm-12 {
+  height: 48px;
+  background-color: #EED9D9;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+div.red-block.col-sm-12 span{
+  margin: 0;
+  line-height: 50px;
+  margin-left: 20px;
+  color: #FF0000;
+}
+
+@media only screen and (max-width: 767px) {
+
+  div.col-sm-12 sub-col, div.col-sm-6.main-col, div.col-sm-6.main-col#map {
+    width: 100%;
+  }
+
+  div.col-sm-6.main-col#map {
+    margin: 0;
+  }
+
+  div.row.my-main-content {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+}
+
+div.col-sm-12.sub-col div.col-sm-4 p span.green {
+  font-size: 15px;
+  font-family: PTSansWebRegular;
+}
+
+
+/*ol.minicart-items li.product-item div.product span.product-image-container span.product-image-wrapper img {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+ol.minicart-items li.product-item div.product span.product-image-container {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.opc-block-summary .product-item .product-item-inner {
+  width: 95.45% !important;
+  padding-left: 5%;
+}*/

@@ -1,0 +1,254 @@
+body.cms-find-store.cms-page-view.page-layout-1column div.page-wrapper div.sections.nav-sections {
+  display: none;
+}
+
+p#find-title {
+  margin-bottom: 10px;
+  padding: 0;
+}
+p#sub-title {
+  margin-bottom: 40px;
+}
+
+div#heading {
+  padding: 0;
+}
+#maincontent {
+  padding: 0;
+}
+
+div#location-form.col-sm-12 {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  width: 97.5%;
+
+  background-color: #EEEEEE;
+}
+
+div#locate-button::after {
+  color: #bbb;
+  content: '\f059';
+  font-family: fontawesome;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+div#locate-button {
+  display: inline-block;
+}
+
+p#form-title {
+  font-family: PTSansWebBold;
+  font-size: 30px;
+  margin: 0;
+}
+
+div#locate-me.col-sm-3 {
+  padding: 0;
+  margin-top: 40px;
+  width: 24.33%;
+}
+
+div#locate.col-sm-9 {
+  padding: 0;
+  border-left: 2px dotted #ccc;
+  padding-left: 30px;
+}
+
+div#country.my-field {
+  display: inline-block;
+  margin-right: 1%;
+}
+
+
+.my-select {
+  height: 48px !important;
+  border: none !important;
+  border-radius: 2px !important;
+  width:250px;
+}
+
+div#address-type.my-field {
+  width: 67%;
+  display: inline-block;
+}
+
+div#address-type.my-field .my-control {
+  width: 140px;
+}
+
+div#street-address.my-field {
+  margin-top: 30px;
+  width: 35%;
+  padding-right: 16px;
+  display: inline-block;
+}
+
+div#app-ste-floor.my-field {
+  width: 35%;
+  padding-right: 16px;
+  display: inline-block;
+}
+div#app-ste-floor.my-field  select{
+	width:100%;
+}
+
+div#doe.my-field {
+  width: 29%;
+  display: inline-block;
+}
+
+
+div#zip-code.my-field div.my-control {
+  width: 220px;
+  display: inline-block;
+}
+
+div#zip-code.my-field .my-label {
+  display: block;
+  margin-top: 30px;
+}
+
+div#zip-code.my-field {
+  margin-bottom: 30px;
+}
+
+button#form-subm.green-button {
+  box-shadow: none !important;
+}
+
+div#zip-code.my-field a span {
+  text-decoration: none;
+  color: #358930;
+  padding-left: 6px;
+}
+div#zip-code.my-field a:hover{
+    text-decoration: none;
+}
+
+
+div#locate-me.col-sm-3 div#locate-button a#location::before {
+  font-family: fontawesome;
+  content: '\F041';
+  left: 6%;
+  position: absolute;
+}
+
+div#locate-me.col-sm-3 div#locate-button a#location span {
+  padding-left: 0;
+}
+
+button#form-subm span#submit {
+  position: relative;
+  top: -6px;
+}
+
+div#locate-me span {
+  margin-left: 22px;
+}
+
+@media only screen and (max-width: 991px){
+  div#doe.my-field {
+    width: auto;
+  }
+
+  div#locate.col-sm-9 {
+    padding: 0;
+    padding-left: 10px;
+  }
+
+  div#locate-me span {
+    margin-left: 12px;
+  }
+  	#map{
+		display:none;
+	}
+	#heading-top  #map{
+		display:block !important;
+	}
+}
+
+@media only screen and (max-width: 767px){
+  div#location-form  {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  div#heading {
+    margin-left: 1.4%;
+  }
+
+  div#locate.col-sm-9 {
+    padding: 0;
+    border: none;
+  }
+
+  div#country.my-field {
+    width: 100%;
+    margin: 0;
+  }
+
+  div#address-type.my-field {
+    width: 100%;
+  }
+
+  div#address-type.my-field .my-control {
+    width: 100%;
+  }
+
+  div#street-address.my-field {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  div#app-ste-floor.my-field {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  div#doe.my-field div.my-control {
+    width: 100%;
+  }
+
+  div#doe.my-field {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  div#zip-code.my-field div.my-control {
+    width: 100%;
+  }
+
+  div#zip-code.my-field a span {
+    padding: 2px;
+  }
+
+  div#locate-me.col-sm-3 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 20px;
+  }
+
+  div#locate-me.col-sm-3 div#locate-button a#location::before {
+    left: auto;
+  }
+  #authenticationPopup  + .container .row{
+		margin:0;
+	}
+
+}
+
+.my-label {
+  font-family: PT Sans Narrow Bold;
+  font-size: 15px;
+  padding: 0 !important;
+}
+#heading-top  #map{
+	display:none;
+}
