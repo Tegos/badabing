@@ -1,0 +1,41 @@
+<?php
+// @codingStandardsIgnoreFile
+
+/**
+ * @var \Magento\Theme\Block\Html\Header\Logo $block
+ */
+?>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+			<?php $storeName = $block->getThemeName() ? $block->getThemeName() : $block->getLogoAlt(); ?>
+			<span data-action="toggle-nav" class="action nav-toggle"><span><?php /* @escapeNotVerified */
+					echo __('Toggle Nav') ?></span></span>
+			<?php if ($block->isHomePage()): ?>
+			<strong class="logo">
+				<?php else: ?>
+				<a class="logo" href="<?php echo $block->getUrl(''); ?>" title="<?php /* @escapeNotVerified */
+				echo $storeName ?>">
+					<?php endif ?>
+					<img src="<?php /* @escapeNotVerified */
+					echo $block->getLogoSrc() ?>"
+						 alt="<?php /* @escapeNotVerified */
+						 echo $block->getLogoAlt() ?>"
+						<?php echo $block->getLogoWidth() ? 'width="' . $block->getLogoWidth() . '"' : '' ?>
+						<?php echo $block->getLogoHeight() ? 'height="' . $block->getLogoHeight() . '"' : '' ?>
+					/>
+					<?php if ($block->isHomePage()): ?>
+			</strong>
+		<?php else: ?>
+			</a>
+		<?php endif ?>
+		</div>
+		<div class="col-sm-8">
+			<ul class="orange-menu list-unstyled">
+				<li><a href="/pizza">Our Menu</a></li>
+				<li><a href="/gift-card">Gift Cards</a></li>
+				<li><a href="/reward">Quality Guaranteed</a></li>
+			</ul>
+		</div>
+	</div>
+</div>

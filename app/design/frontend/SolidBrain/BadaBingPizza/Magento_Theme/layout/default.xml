@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+
+    <container name="header.custom" label="Header Custom" htmlTag="div" htmlClass="header-custom">
+        <block class="Magento\Framework\View\Element\Html\Links" name="footer_compaghghny_links">
+            <arguments>
+                <argument name="css_class" xsi:type="string">footer links</argument>
+            </arguments>
+        </block>
+    </container>
+
+    <referenceContainer name="root">
+        <container name="main.remove"/>
+    </referenceContainer>
+
+    <referenceBlock name="main.remove" remove="true"/>
+
+    <move element="minicart" destination="header.custom" after="-"/>
+    <move element="header.custom" destination="after.body.start" after="-"/>
+
+</page>
