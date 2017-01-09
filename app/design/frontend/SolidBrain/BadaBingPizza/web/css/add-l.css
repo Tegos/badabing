@@ -1,0 +1,36 @@
+.header.links .cart-li {
+    display: inline-block !important;
+}
+
+.minicart-wrapper a:focus {
+    outline: none;
+}
+
+.minicart-wrapper .total {
+    display: inline;
+}
+
+.product-item-details .details-qty.qty label {
+    color: black;
+    padding: 0 !important;
+}
+
+.minicart-items .item-qty {
+    color: black;
+}
+
+.details-qty.qty button {
+    display: inline !important;
+}
+
+.minicart-items-wrapper {
+    height: 350px;
+}
+
+.minicart-items li.item.product.product-item {
+    height: auto;
+}
+
+.drop-show {
+    cursor: pointer;
+}

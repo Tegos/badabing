@@ -1,0 +1,370 @@
+#ui-id-3 {
+  display: none;
+}
+
+h1.page-title span.base {
+  font-size: 5.1rem;
+  font-family: rockwell Condensed;
+
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a.action.action-edit::before {
+  display: none !important;
+}
+a.action.action-gift {
+  display: none !important;
+}
+
+@media only screen and (max-width: 767px){
+  ul.orange-menu.list-unstyled{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  #maincontent  {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+#maincontent  {
+  padding: 0;
+}
+mark, .mark, div.cart-summary {
+  background-color: #FEE08E;
+}
+
+#gift-options-cart-item-32 {
+  display: none;
+}
+
+/*changing "Summaty > Shipping" text */
+th.mark span.label  {
+  color: #333333;
+  font-weight: normal;
+  padding: 0;
+}
+
+#form-validate {
+  background-color: #EEEEEE;
+  width: 66% !important;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 11px;
+  padding-bottom: 40px;
+}
+
+div.cart-discount {
+  border: none;
+  background-color: #EEEEEE;
+  width: 66% !important;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+}
+
+div.cart-summary {
+  width: 31.6% !important;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+/* "Apply Discount Code" styling */
+button.action.apply.primary {
+  background: #32882D !important;
+  border: 1px solid #32882D !important;
+  box-shadow: none !important;
+  color: white !important;
+  text-transform: uppercase;
+  font-family: PT Sans Narrow Bold;
+  border-radius: 3px !important;
+  height: 48px;
+  width: 180px !important;
+  font-size: 2rem;
+}
+div#block-discount.block.discount.active {
+  width: 100%;
+}
+
+div.control {
+  width: 97.6%;
+}
+
+input[type="text"], input[type="password"], input[type="url"], input[type="tel"], input[type="search"], input[type="number"], input[type="datetime"], input[type="email"] {
+  height: 48px;
+  border: none;
+  border-radius: 2px;
+}
+
+div.content {
+  padding: 0 !important;
+}
+
+#block-discount-heading {
+  color: black;
+  text-transform: uppercase;
+  font-family: PTSansWebBold;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* END */
+
+/* "UPDATE CART" styling */
+.cart.table-wrapper .col.price, .order-items.table-wrapper .col.price, .cart.table-wrapper .col.qty, .order-items.table-wrapper .col.qty, .cart.table-wrapper .col.subtotal, .order-items.table-wrapper .col.subtotal, .cart.table-wrapper .col.msrp, .order-items.table-wrapper .col.msrp {
+  text-align: left;
+}
+
+th.col {
+  padding-bottom: 6px !important;
+  font-family: PTSansWebBold;
+  font-weight: bold;
+}
+
+td.col span.price-excluding-tax span.cart-price span.price {
+  font-family: PTSansWebBold;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+td.col.price, td.col.subtotal {
+  font-family: PTSansWebBold;
+  font-weight: bold;
+  color: black;
+  height: 1rem;
+}
+td.col.price, td.col.subtotal, td.col.qty {
+    width: 100px;
+}
+
+.cart.table-wrapper .cart > .item {
+  border-bottom: 1px dotted #ccc;
+}
+
+th.col.item {
+  padding-left: 0;
+  font-size: 18px;
+}
+
+img.product-image-photo {
+  height: 100px;
+  width: 100px;
+  margin: 0;
+}
+
+span.product-image-container {
+  width: 100px !important;
+}
+
+.cart.table-wrapper .product-item-name {
+  font-size: 15px;
+  display: block;
+  margin: 0;
+}
+
+.cart.table-wrapper .product-item-photo {
+  padding-right: 12px !important;
+}
+
+.cart.table-wrapper .item .col.item {
+  padding: 20px 8px 0px 0 !important;
+}
+
+button.action.update {
+  background: #32882D !important;
+  border: 1px solid #32882D !important;
+  box-shadow: none !important;
+  color: white !important;
+  text-transform: uppercase;
+  font-family: PT Sans Narrow Bold;
+  border-radius: 3px !important;
+  height: 48px;
+  width: 180px !important;
+  font-size: 2rem;
+}
+
+a.action.action-delete::before {
+  margin-bottom: 10px;
+}
+
+.cart.table-wrapper .actions-toolbar{
+  padding-bottom: 30px;
+}
+/* END */
+
+/* styling suumary section */
+button.action.primary.checkout {
+  background: #32882D !important;
+  border: 1px solid #32882D !important;
+  box-shadow: none !important;
+  color: white !important;
+  text-transform: uppercase;
+  font-family: PT Sans Narrow Bold;
+  border-radius: 3px !important;
+  height: 48px;
+  width: 180px !important;
+  font-size: 2rem !important;
+  line-height: 1 !important;
+  padding: 0 !important;
+}
+
+div#cart-totals {
+  border: none;
+}
+
+tr.grand.totals th.mark, tr.grand.totals td.amount {
+  border: none;
+  font-family: PTSansWebBold !important;
+  font-size: 15px !important;
+  padding-top: 0;
+}
+
+table tbody tr td strong span.price {
+  font-family: PTSansWebRegular;
+  font-weight: normal;
+}
+
+tr.totals-tax {
+  font-family: PTSansWebRegular !important;
+  font-size: 15px !important;
+}
+
+strong.summary.title {
+  margin: 0;
+  font-family: PTSansWebBold;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+strong#block-shipping-heading {
+  font-family: PTSansWebBold;
+  font-size: 15px;
+}
+
+tr.totals.sub {
+  font-family: PTSansWebRegular !important;
+  font-size: 15px !important;
+}
+
+tr.totals.shipping.excl {
+  font-family: PTSansWebRegular !important;
+  font-size: 15px !important;
+}
+
+tbody tr th.mark span.label {
+  font-size: 15px !important;
+}
+
+div#block-shipping div.title {
+  padding: 0;
+  margin-top: 30px;
+}
+
+.abs-cart-block > .title:after, .minicart-items .product .toggle:after, .abs-discount-block .block > .title:after, .cart-summary .block > .title:after, .paypal-review-discount .block > .title:after, .cart-discount .block > .title:after {
+  top: 0 !important;
+}
+
+div #shopping-cart-table thead th span {}
+
+/* END */
+li.item a.action.multicheckout {
+  display: none;
+}
+
+@media only screen and (max-width: 1179px){
+
+  main#maincontent {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 767px){
+
+  div.cart-summary {
+    width: 100% !important;
+  }
+
+  div.cart-discount {
+    width: 100% !important;
+  }
+
+  form#form-validate {
+    width: 100% !important;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  img.product-image-photo {
+    height: 65px;
+    width: 65px;
+  }
+  .cart.table-wrapper .item .col.item {
+    display: table-cell;
+  }
+
+  div.cart.table-wrapper {
+    border: none;
+  }
+
+  .cart.table-wrapper .col.qty, .cart.table-wrapper .col.price, .cart.table-wrapper .col.subtotal, .cart.table-wrapper .col.msrp {
+    width: 30% !important;
+  }
+
+  .paypal-review-discount .actions-toolbar, .cart-discount .actions-toolbar {
+    display: block;
+    width: 100%;
+  }
+
+  .paypal-review-discount .field, .cart-discount .field {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 340px){
+  .cart.table-wrapper .col.qty, .cart.table-wrapper .col.price, .cart.table-wrapper .col.subtotal, .cart.table-wrapper .col.msrp {
+    width: 28% !important;
+  }
+
+  .cart.table-wrapper .item .col.item {
+    padding: 20px 0px 0px 0 !important;
+  }
+
+  .cart.table-wrapper .col.qty .input-text {
+    width: 40px;
+  }
+}
+
+.cart.table-wrapper .product-item-photo {
+	max-width: 65px;
+}
+
+.cart.table-wrapper .cart thead tr th.col {
+  font-size: 18px !important;
+}
+
+td.col span.price-excluding-tax span.cart-price span.price {
+  font-size: 18px;
+}
+
+label.label {
+  padding: 0 !important;
+  color: black !important;
+}
+
+dl.items.methods div #s_method_flatrate{
+  margin-left: 5px;
+}
+dl.items.methods div label.label {
+  float: right;
+}

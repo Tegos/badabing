@@ -3,21 +3,26 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
 
 
-    <container name="header.custom" label="Header Custom" htmlTag="div" htmlClass="header-custom">
-        <block class="Magento\Framework\View\Element\Html\Links" name="footer_compaghghny_links">
-            <arguments>
-                <argument name="css_class" xsi:type="string">footer links</argument>
-            </arguments>
-        </block>
+    <container name="main.remove"/>
+
+
+    <container name="header-menu-ul" htmlTag="ul" htmlClass="header links dropdown-not-s">
+        <block class="Magento\Framework\View\Element\Template" template="Magento_Theme::header_menu.phtml"/>
     </container>
 
-    <referenceContainer name="root">
-        <container name="main.remove"/>
-    </referenceContainer>
+
+    <move element="header-menu-ul" destination="header.panel" before="-"/>
+    <move element="minicart" destination="header-menu-ul" after="-"/>
+
+
+    <!--removed standard  elements-->
+    <move element="logo9" destination="main.remove"/>
+    <move element="store_language" destination="main.remove"/>
+    <move element="header" destination="main.remove"/>
+    <move element="header.links" destination="main.remove"/>
+
 
     <referenceBlock name="main.remove" remove="true"/>
 
-    <move element="minicart" destination="header.custom" after="-"/>
-    <move element="header.custom" destination="after.body.start" after="-"/>
 
 </page>
