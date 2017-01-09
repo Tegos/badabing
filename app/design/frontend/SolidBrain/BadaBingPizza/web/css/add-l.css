@@ -24,7 +24,7 @@
 }
 
 .minicart-items-wrapper {
-    height: 350px;
+    max-height: 350px;
 }
 
 .minicart-items li.item.product.product-item {

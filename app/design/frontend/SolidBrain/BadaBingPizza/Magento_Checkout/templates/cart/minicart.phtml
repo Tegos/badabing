@@ -4,8 +4,6 @@
 		<a class="action showcart" href="<?php /* @escapeNotVerified */
 		echo $block->getShoppingCartUrl(); ?>"
 		   data-bind="scope: 'minicart_content'">
-			<span class="text"><?php /* @escapeNotVerified */
-				echo __('My Cart'); ?></span>
         <span class="counter qty empty"
 			  data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: false">
 
@@ -19,10 +17,10 @@
         </span>
 
 			<div class="total" data-bind="scope: 'minicart_content'">
-				<span data-bind="html: getCartParam('subtotal')"></span>			​​​​​​​​​​​​​​​​
+				<span data-bind="html: getCartParam('subtotal')"></span> ​​​​​​​​​​​​​​​​
 			</div>
 
-
+			<i class="fa fa-angle-down" aria-hidden="true"></i>
 		</a>
 
 		<?php if ($block->getIsNeedToDisplaySideBar()): ?>
@@ -57,10 +55,9 @@
 			echo $block->getViewFileUrl('images/loader-1.gif'); ?>"
         }
     }
-
 		</script>
 	</div>
-	<i class="fa fa-angle-down" aria-hidden="true"></i>
+
 </li>
 
 

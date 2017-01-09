@@ -36,6 +36,7 @@
         <script src="js/jquery.ui-slider.js"/>
 
         <script src="js/script.js"/>
+        <script src="js/choose-pizza.js"/>
         <script src="js/popup.js"/>
     </head>
 </page>

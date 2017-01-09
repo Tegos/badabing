@@ -1,0 +1,183 @@
+#ui-id-3 {
+  display: none;
+}
+
+main#maincontent {
+  padding: 0;
+}
+
+
+@media only screen and (max-width: 767px){
+
+  div.control {
+    width: 100% !important;
+  }
+
+  ul.orange-menu.list-unstyled{
+    display: none;
+  }
+
+}
+
+/* changing labels style */
+form.form.create.account.form-create-account fieldset.fieldset.create.info div label.label, form.form.create.account.form-create-account fieldset.fieldset.create.account div label.label{
+  padding: 0 !important;
+  color: black;
+  font-family: PTSansWebBold;
+  font-weight: bold !important;
+  font-size: 1.4rem;
+}
+form.form.create.account.form-create-account fieldset.fieldset.create.info div.field.choice.newsletter label.label{
+  padding-left: 30px !important;
+}
+
+
+/* restyling and resizing inputs */
+input[type="text"], input[type="password"], input[type="url"], input[type="tel"], input[type="search"], input[type="number"], input[type="datetime"], input[type="email"] {
+  border-radius: 3px;
+  height: 43px;
+  border: none !important;
+}
+
+div.control {
+  width: 60%;
+}
+
+/*changing page-title*/
+h1.page-title {
+  margin-bottom: 20px !important;
+  font-family: rockwell Condensed;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 5.5rem !important;
+}
+
+/* changing backgrounds of forms */
+fieldset.fieldset.create.info {
+  background-color: #EEEEEE;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  width: 760px;
+}
+
+fieldset.fieldset.create.account {
+  background-color: #EEEEEE;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  width: 760px;
+}
+
+div.actions-toolbar {
+  background-color: #EEEEEE;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 100px;
+  width: 760px;
+}
+/* end */
+
+/* cahnging form headers */
+legend.legend {
+  border: none !important;
+  font-family: PTSansWebBold !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  font-size: 3rem !important;
+  margin: 0 !important;
+}
+
+/* changing button styles */
+
+button.action.submit.primary {
+  margin-top: 20px;
+  background: #32882D;
+  border: 1px solid #32882D;
+  width: 230px;
+  height: 50px;
+  font-family: PT Sans Narrow Bold;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+#password-strength-meter {
+  display: none;
+}
+
+.radio, .checkbox {
+  display: inline;
+}
+
+
+@media only screen and (max-width: 799px){
+  fieldset.fieldset.create.account, div.actions-toolbar, fieldset.fieldset.create.info {
+    width: 100%;
+  }
+
+  div.control {
+    width: 90%;
+  }
+
+  div.primary {
+    align: center;
+  }
+}
+
+div.field.choice.newsletter label.label span{
+  font-family: PTSansWebRegular;
+  font-weight: normal;
+}
+
+.fieldset > .field.required > .label:after, .fieldset > .fields > .field.required > .label:after, .fieldset > .field._required > .label:after, .fieldset > .fields > .field._required > .label:after {
+  margin:0;
+}
+
+/* adding dots after label names */
+div.field.field-name-firstname.required::before {
+  content: ":";
+  color: black;
+  margin-left: 75px;
+  position: absolute;
+  font-weight: bold;
+}
+
+div.field.field-name-lastname.required::before {
+  content: ":";
+  color: black;
+  margin-left: 73px;
+  position: absolute;
+  font-weight: bold;
+}
+
+div.field.required::before {
+  content: ":";
+  color: black;
+  margin-left: 39px;
+  position: absolute;
+  font-weight: bold;
+}
+
+div.field.password.required::before {
+  margin-left: 61px;
+}
+
+div.field.confirmation.required::before {
+  content: ":";
+  color: black;
+  margin-left: 111px;
+  position: absolute;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1199px){
+
+  main#maincontent {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}

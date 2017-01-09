@@ -6070,9 +6070,9 @@ body.catalog-product-compare-index .action.print {
     line-height: 24px;
     border-radius: 50%;
     display: inline-block;
-    margin: 3px 0 0;
+    /*margin: 3px 0 0;*/
     min-width: 18px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     padding: 0 3px;
     text-align: center;
     white-space: normal
@@ -13508,7 +13508,6 @@ header .block.block-search {
     font-family: 'PTSansWebBold';
     margin-left: 11px;
     position: relative;
-    top: -5px;
 }
 
 .navigation .ui-menu {
@@ -13684,7 +13683,7 @@ header .links-row {
 }
 
 .header.links .cart-li i {
-    top: -3px;
+    top: 0;
 }
 
 .your-store::before {

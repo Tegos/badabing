@@ -16,7 +16,7 @@
 
 
     <!--removed standard  elements-->
-    <move element="logo9" destination="main.remove"/>
+    <!--move element="logo" destination="main.remove"/-->
     <move element="store_language" destination="main.remove"/>
     <move element="header" destination="main.remove"/>
     <move element="header.links" destination="main.remove"/>
