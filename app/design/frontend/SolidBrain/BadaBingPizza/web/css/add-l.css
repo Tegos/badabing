@@ -1,36 +1,48 @@
 .header.links .cart-li {
-    display: inline-block !important;
+	display: inline-block !important;
 }
 
 .minicart-wrapper a:focus {
-    outline: none;
+	outline: none;
 }
 
 .minicart-wrapper .total {
-    display: inline;
+	display: inline;
 }
 
 .product-item-details .details-qty.qty label {
-    color: black;
-    padding: 0 !important;
+	color: black;
+	padding: 0 !important;
 }
 
 .minicart-items .item-qty {
-    color: black;
+	color: black;
 }
 
 .details-qty.qty button {
-    display: inline !important;
+	display: inline !important;
 }
 
 .minicart-items-wrapper {
-    max-height: 350px;
+	max-height: 350px;
 }
 
 .minicart-items li.item.product.product-item {
-    height: auto;
+	height: auto;
 }
 
 .drop-show {
-    cursor: pointer;
+	cursor: pointer;
+}
+
+.subtitle.empty.cart_edit {
+	color: black;
+}
+
+.follow_us_icon_home {
+	height: 150px;
+}
+
+.bg_transparent {
+	background-color: transparent !important;
 }
