@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<script>
+		var require = {
+			"baseUrl": "http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US"
+		};
+	</script>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Default Description"/>
+	<meta name="keywords" content="Magento, Varien, E-commerce"/>
+	<meta name="robots" content="INDEX,FOLLOW"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<title>Bada Bing Pizza</title>
+	<link rel="stylesheet" type="text/css" media="all"
+	      href="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/fonts/font-awesome/css/font-awesome.css"/>
+	<link rel="stylesheet" type="text/css" media="all"
+	      href="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/js/owl.carousel/owl.carousel.css"/>
+	<link rel="stylesheet" type="text/css" media="all"
+	      href="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" media="all"
+	      href="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/bootstrap/css/bootstrap-theme.css"/>
+	<link rel="stylesheet" type="text/css" media="all"
+	      href="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/css/my-style.css"/>
+	<link rel="stylesheet" type="text/css" media="all"
+	      href="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/css/popup.css"/>
+	<link rel="stylesheet" type="text/css" media="all"
+	      href="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/css/find-store.css"/>
+	<link rel="stylesheet" type="text/css" media="all"
+	      href="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/css/find-your-store.css"/>
+	<link rel="stylesheet" type="text/css" media="all"
+	      href="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/css/style-m.css"/>
+	<link rel="stylesheet" type="text/css" media="all"
+	      href="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/css/add-m.css"/>
+	<link rel="stylesheet" type="text/css" media="all"
+	      href="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/css/add-l.css"/>
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)"
+	      href="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/css/style-l.css"/>
+	<link rel="stylesheet" type="text/css" media="print"
+	      href="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/css/print.css"/>
+	<script type="text/javascript"
+	        src="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/requirejs/require.js"></script>
+	<script type="text/javascript"
+	        src="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/mage/requirejs/mixins.js"></script>
+	<script type="text/javascript"
+	        src="http://badabingpizza.com/pub/static/_requirejs/frontend/SolidBrain/BadaBingPizza/en_US/requirejs-config.js"></script>
+	<script type="text/javascript"
+	        src="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/jquery/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript"
+	        src="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/js/owl.carousel/owl.carousel.min.js"></script>
+	<script type="text/javascript"
+	        src="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/js/script.js"></script>
+	<script type="text/javascript"
+	        src="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/js/jquery.ui-slider.js"></script>
+	<script type="text/javascript"
+	        src="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/js/choose-pizza.js"></script>
+	<script type="text/javascript"
+	        src="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/js/popup.js"></script>
+	<link rel="icon" type="image/x-icon" href="http://badabingpizza.com/pub/media/favicon/stores/1/favicon_.jpg"/>
+	<link rel="shortcut icon" type="image/x-icon"
+	      href="http://badabingpizza.com/pub/media/favicon/stores/1/favicon_.jpg"/>
+</head>
+<body data-container="body"
+      data-mage-init='{"loaderAjax": {}, "loader": { "icon": "http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/images/loader-2.gif"}}'
+      class="cms-home cms-index-index page-layout-1column">
+<script>
+	require.config({
+		deps: [
+			'jquery',
+			'mage/translate',
+			'jquery/jquery-storageapi'
+		],
+		callback: function ($) {
+			'use strict';
+
+			var dependencies = [],
+				versionObj;
+
+			$.initNamespaceStorage('mage-translation-storage');
+			$.initNamespaceStorage('mage-translation-file-version');
+			versionObj = $.localStorage.get('mage-translation-file-version');
+
+			if (versionObj.version !== '5b795687969986004918c84afda9809c2b0e59b3') {
+				dependencies.push(
+					'text!js-translation.json'
+				);
+
+			}
+
+			require.config({
+				deps: dependencies,
+				callback: function (string) {
+					if (typeof string === 'string') {
+						$.mage.translate.add(JSON.parse(string));
+						$.localStorage.set('mage-translation-storage', string);
+						$.localStorage.set(
+							'mage-translation-file-version',
+							{
+								version: '5b795687969986004918c84afda9809c2b0e59b3'
+							}
+						);
+					} else {
+						$.mage.translate.add($.localStorage.get('mage-translation-storage'));
+					}
+				}
+			});
+		}
+	});
+</script>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "mage/cookies": {
+                "expires": null,
+                "path": "/",
+                "domain": ".badabingpizza.com",
+                "secure": false,
+                "lifetime": "3600"
+            }
+        }
+    }
+
+</script>
+<noscript>
+	<div class="message global noscript">
+		<div class="content">
+			<p>
+				<strong>JavaScript seems to be disabled in your browser.</strong>
+				<span>For the best experience on our site, be sure to turn on Javascript in your browser.</span>
+			</p>
+		</div>
+	</div>
+</noscript>
+<div class="page-wrapper">
+	<header class="page-header">
+		<div class="panel wrapper">
+			<div class="panel header">
+				<ul class="header links dropdown-not-s">
+					<li class="your-store-li">
+						<a class="your-store drop-show">Select Your Store<i class="fa fa-angle-down"
+						                                                    aria-hidden="true"></i>
+						</a>
+						<div class="dropdown-content">
+							<ul class="list-unstyled">
+								<li>
+									<a class="black-small-text" href="/find-your-store/">Find your store</a>
+								</li>
+								<li>
+									<a class="black-small-text" href="/find-store/">Find store</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="sign-li">
+						<a class="drop-show">Sign In Or Register</a><i class="fa fa-angle-down" aria-hidden="true"></i>
+						<div class="dropdown-content">
+							<ul class="list-unstyled sign">
+								<li><a class="black-small-text" href="/customer/account/login/">Sign In</a></li>
+								<li><a class="black-small-text" href="/customer/account/create/">Create an Account</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a class="drop-show">Favorites <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<div class="dropdown-content">
+							<ul class="list-unstyled">
+								<li>
+									<a class="black-small-text" href="/">Favorite</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="cart-li">
+
+						<div data-block="minicart" class="minicart-wrapper">
+							<a class="action showcart" href="http://badabingpizza.com/checkout/cart/"
+							   data-bind="scope: 'minicart_content'">
+        <span class="counter qty empty"
+              data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: false">
+
+            <span class="counter-number"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span>
+            <span class="counter-label">
+            <!-- ko if: getCartParam('summary_count') -->
+	            <!-- ko text: getCartParam('summary_count') --><!-- /ko -->
+	            <!-- ko i18n: 'items' --><!-- /ko -->
+	            <!-- /ko -->
+            </span>
+        </span>
+
+								<div class="total" data-bind="scope: 'minicart_content'">
+									<span data-bind="html: getCartParam('subtotal')"></span> ​​​​​​​​​​​​​​​​
+								</div>
+
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
+
+							<div class="block block-minicart empty"
+							     data-role="dropdownDialog"
+							     data-mage-init='{"dropdownDialog":{
+                "appendTo":"[data-block=minicart]",
+                "triggerTarget":".showcart",
+                "timeout": "2000",
+                "closeOnMouseLeave": false,
+                "closeOnEscape": true,
+                "triggerClass":"active",
+                "parentClass":"active",
+                "buttons":[]}}'>
+								<div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
+									<!-- ko template: getTemplate() --><!-- /ko -->
+								</div>
+							</div>
+							<script>
+								window.checkout = {
+									"shoppingCartUrl": "http:\/\/badabingpizza.com\/checkout\/cart\/",
+									"checkoutUrl": "http:\/\/badabingpizza.com\/checkout\/",
+									"updateItemQtyUrl": "http:\/\/badabingpizza.com\/checkout\/sidebar\/updateItemQty\/",
+									"removeItemUrl": "http:\/\/badabingpizza.com\/checkout\/sidebar\/removeItem\/",
+									"imageTemplate": "Magento_Catalog\/product\/image_with_borders",
+									"baseUrl": "http:\/\/badabingpizza.com\/",
+									"minicartMaxItemsVisible": 5,
+									"customerLoginUrl": "http:\/\/badabingpizza.com\/customer\/account\/login\/",
+									"isRedirectRequired": false,
+									"autocomplete": "off",
+									"captcha": {
+										"user_login": {
+											"isCaseSensitive": false,
+											"imageHeight": 50,
+											"imageSrc": "",
+											"refreshUrl": "http:\/\/badabingpizza.com\/captcha\/refresh\/",
+											"isRequired": false
+										},
+										"guest_checkout": {
+											"isCaseSensitive": false,
+											"imageHeight": 50,
+											"imageSrc": "",
+											"refreshUrl": "http:\/\/badabingpizza.com\/captcha\/refresh\/",
+											"isRequired": false
+										}
+									}
+								};
+							</script>
+							<script type="text/x-magento-init">
+    {
+        "[data-block='minicart']": {
+            "Magento_Ui/js/core/app": {"components":{"minicart_content":{"children":{"subtotal.container":{"children":{"subtotal":{"children":{"subtotal.totals":{"config":{"display_cart_subtotal_incl_tax":0,"display_cart_subtotal_excl_tax":1,"template":"Magento_Tax\/checkout\/minicart\/subtotal\/totals"},"children":{"subtotal.totals.msrp":{"component":"Magento_Msrp\/js\/view\/checkout\/minicart\/subtotal\/totals","config":{"displayArea":"minicart-subtotal-hidden","template":"Magento_Msrp\/checkout\/minicart\/subtotal\/totals"}}},"component":"Magento_Tax\/js\/view\/checkout\/minicart\/subtotal\/totals"}},"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/subtotal"}}},"component":"uiComponent","config":{"displayArea":"subtotalContainer"}},"item.renderer":{"component":"uiComponent","config":{"displayArea":"defaultRenderer","template":"Magento_Checkout\/minicart\/item\/default"},"children":{"item.image":{"component":"Magento_Catalog\/js\/view\/image","config":{"template":"Magento_Catalog\/product\/image","displayArea":"itemImage"}},"checkout.cart.item.price.sidebar":{"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/item\/price","displayArea":"priceSidebar"}}}},"extra_info":{"component":"uiComponent","config":{"displayArea":"extraInfo"}},"promotion":{"component":"uiComponent","config":{"displayArea":"promotion"}}},"config":{"itemRenderer":{"default":"defaultRenderer","simple":"defaultRenderer","virtual":"defaultRenderer"},"template":"Magento_Checkout\/minicart\/content"},"component":"Magento_Checkout\/js\/view\/minicart"}},"types":[]}        },
+        "*": {
+            "Magento_Ui/js/block-loader": "http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/images/loader-1.gif"
+        }
+    }
+
+							</script>
+						</div>
+
+					</li>
+
+
+				</ul>
+				<a class="action skip contentarea" href="#contentarea"><span>Skip to Content</span></a>
+			</div>
+		</div>
+		<div class="header content">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<span data-action="toggle-nav" class="action nav-toggle"><span>Toggle Nav</span></span>
+						<strong class="logo">
+							<img src="http://badabingpizza.com/pub/media/logo/stores/1/_F9A3123A75402190DCC1AE1EE7CEFCF6C577CC02B974EBAC21_pimgpsh_fullsize_distr.png"
+							     alt="Bada Bing Pizza"
+							     width="373" height="194"/>
+						</strong>
+					</div>
+					<div class="col-sm-8">
+						<ul class="orange-menu list-unstyled">
+							<li><a href="/pizza">Our Menu</a></li>
+							<li><a href="/gift-card">Gift Cards</a></li>
+							<li><a href="/reward">Fresh Market</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="block block-search">
+				<div class="block block-title"><strong>Search</strong></div>
+				<div class="block block-content">
+					<form class="form minisearch" id="search_mini_form"
+					      action="http://badabingpizza.com/catalogsearch/result/" method="get">
+						<div class="field search">
+							<label class="label" for="search" data-role="minisearch-label">
+								<span>Search</span>
+							</label>
+							<div class="control">
+								<input id="search"
+								       data-mage-init='{"quickSearch":{
+                                "formSelector":"#search_mini_form",
+                                "url":"http://badabingpizza.com/search/ajax/suggest/",
+                                "destinationSelector":"#search_autocomplete"}
+                           }'
+								       type="text"
+								       name="q"
+								       value=""
+								       placeholder="Search entire store here..."
+								       class="input-text"
+								       maxlength="128"
+								       role="combobox"
+								       aria-haspopup="false"
+								       aria-autocomplete="both"
+								       autocomplete="off"/>
+								<div id="search_autocomplete" class="search-autocomplete"></div>
+								<div class="nested">
+									<a class="action advanced" href="http://badabingpizza.com/catalogsearch/advanced/"
+									   data-action="advanced-search">
+										Advanced Search </a>
+								</div>
+							</div>
+						</div>
+						<div class="actions">
+							<button type="submit"
+							        title="Search"
+							        class="action search">
+								<span>Search</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<ul class="compare wrapper">
+				<li class="item link compare" data-bind="scope: 'compareProducts'" data-role="compare-products-link">
+					<a class="action compare no-display" title="Compare Products"
+					   data-bind="attr: {'href': compareProducts().listUrl}, css: {'no-display': !compareProducts().count}"
+					>
+						Compare Products <span class="counter qty"
+						                       data-bind="text: compareProducts().countCaption"></span>
+					</a>
+				</li>
+				<script type="text/x-magento-init">
+{"[data-role=compare-products-link]": {"Magento_Ui/js/core/app": {"components":{"compareProducts":{"component":"Magento_Catalog\/js\/view\/compare-products"}}}}}
+
+				</script>
+			</ul>
+		</div>
+	</header>
+	<div class="sections nav-sections">
+		<div class="section-items nav-sections-items" data-mage-init='{"tabs":{"openedState":"active"}}'>
+			<div class="section-item-title nav-sections-item-title" data-role="collapsible">
+				<a class="nav-sections-item-switch" data-toggle="switch" href="#store.menu">Menu</a>
+			</div>
+			<div class="section-item-content nav-sections-item-content" id="store.menu" data-role="content">
+				<nav class="navigation" data-action="navigation">
+					<ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
+						<li class="level0 nav-1 first level-top"><a href="http://badabingpizza.com/insalate-salads"
+						                                            class="level-top"><span>Insalate</span></a></li>
+						<li class="level0 nav-2 level-top"><a href="http://badabingpizza.com/antipasti-appetizers"
+						                                      class="level-top"><span>Antipasti</span></a></li>
+						<li class="level0 nav-3 level-top"><a
+									href="http://badabingpizza.com/panini-sandwiches-and-la-piadina-s"
+									class="level-top"><span>La Piadina's</span></a></li>
+						<li class="level0 nav-4 level-top"><a
+									href="http://badabingpizza.com/homemade-fresh-pasta-mix-and-match"
+									class="level-top"><span>Fresh Pasta</span></a></li>
+						<li class="level0 nav-5 level-top"><a href="http://badabingpizza.com/brioso-signature-entrees"
+						                                      class="level-top"><span>Signature Entrees</span></a></li>
+						<li class="level0 nav-6 last level-top"><a href="http://badabingpizza.com/more"
+						                                           class="level-top"><span>More</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="section-item-title nav-sections-item-title" data-role="collapsible">
+				<a class="nav-sections-item-switch" data-toggle="switch" href="#store.links">Account</a>
+			</div>
+			<div class="section-item-content nav-sections-item-content" id="store.links" data-role="content">
+				<!-- Account links --></div>
+		</div>
+	</div>
+	<main id="maincontent" class="page-main"><a id="contentarea" tabindex="-1"></a>
+		<div class="page-title-wrapper">
+			<h1 class="page-title"
+			>
+				<span class="base" data-ui-id="page-title-wrapper">Home Page</span></h1>
+		</div>
+		<div class="page messages">
+			<div data-placeholder="messages"></div>
+			<div data-bind="scope: 'messages'">
+				<div data-bind="foreach: { data: cookieMessages, as: 'message' }" class="messages">
+					<div data-bind="attr: {
+            class: 'message-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">
+						<div data-bind="html: message.text"></div>
+					</div>
+				</div>
+				<div data-bind="foreach: { data: messages().messages, as: 'message' }" class="messages">
+					<div data-bind="attr: {
+            class: 'message-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">
+						<div data-bind="html: message.text"></div>
+					</div>
+				</div>
+			</div>
+			<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                        "messages": {
+                            "component": "Magento_Theme/js/view/messages"
+                        }
+                    }
+                }
+            }
+    }
+
+			</script>
+		</div>
+		<div class="columns">
+			<div class="column main"><input name="form_key" type="hidden" value="jivBl7eITxpeR98e"/>
+				<div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;">
+					<script>
+						window.authenticationPopup = {
+							"customerRegisterUrl": "http:\/\/badabingpizza.com\/customer\/account\/create\/",
+							"customerForgotPasswordUrl": "http:\/\/badabingpizza.com\/customer\/account\/forgotpassword\/",
+							"baseUrl": "http:\/\/badabingpizza.com\/"
+						};
+					</script>
+					<!-- ko template: getTemplate() --><!-- /ko -->
+					<script type="text/x-magento-init">
+        {
+            "#authenticationPopup": {
+                "Magento_Ui/js/core/app": {"components":{"authenticationPopup":{"component":"Magento_Customer\/js\/view\/authentication-popup","children":{"messages":{"component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"},"captcha":{"component":"Magento_Captcha\/js\/view\/checkout\/loginCaptcha","displayArea":"additional-login-form-fields","formId":"user_login","configSource":"checkout"}}}}}            },
+            "*": {
+                "Magento_Ui/js/block-loader": "http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/images/loader-1.gif"
+            }
+        }
+
+					</script>
+				</div>
+				<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/section-config":{"sections":{"stores\/store\/switch":"*","directory\/currency\/switch":"*","*":["messages"],"customer\/account\/logout":"*","customer\/account\/loginpost":"*","customer\/account\/createpost":"*","customer\/ajax\/login":["checkout-data","cart"],"catalog\/product_compare\/add":["compare-products"],"catalog\/product_compare\/remove":["compare-products"],"catalog\/product_compare\/clear":["compare-products"],"sales\/guest\/reorder":["cart"],"sales\/order\/reorder":["cart"],"checkout\/cart\/add":["cart"],"checkout\/cart\/delete":["cart"],"checkout\/cart\/updatepost":["cart"],"checkout\/cart\/updateitemoptions":["cart"],"checkout\/cart\/couponpost":["cart"],"checkout\/cart\/estimatepost":["cart"],"checkout\/cart\/estimateupdatepost":["cart"],"checkout\/onepage\/saveorder":["cart","checkout-data","last-ordered-items"],"checkout\/sidebar\/removeitem":["cart"],"checkout\/sidebar\/updateitemqty":["cart"],"rest\/*\/v1\/carts\/*\/payment-information":["cart","checkout-data","last-ordered-items"],"rest\/*\/v1\/guest-carts\/*\/payment-information":["cart","checkout-data"],"rest\/*\/v1\/guest-carts\/*\/selected-payment-method":["cart","checkout-data"],"rest\/*\/v1\/carts\/*\/selected-payment-method":["cart","checkout-data"],"multishipping\/checkout\/overviewpost":["cart"],"authorizenet\/directpost_payment\/place":["cart","checkout-data"],"review\/product\/post":["review"],"paypal\/express\/placeorder":["cart","checkout-data"],"paypal\/payflowexpress\/placeorder":["cart","checkout-data"],"braintree\/paypal\/placeorder":["cart","checkout-data"],"wishlist\/index\/add":["wishlist"],"wishlist\/index\/remove":["wishlist"],"wishlist\/index\/updateitemoptions":["wishlist"],"wishlist\/index\/update":["wishlist"],"wishlist\/index\/cart":["wishlist","cart"],"wishlist\/index\/fromcart":["wishlist","cart"],"wishlist\/index\/allcart":["wishlist","cart"],"wishlist\/shared\/allcart":["wishlist","cart"],"wishlist\/shared\/cart":["cart"]},"clientSideSections":["checkout-data"],"baseUrls":["http:\/\/badabingpizza.com\/"]}}}
+				</script>
+				<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/customer-data":{"sectionLoadUrl":"http:\/\/badabingpizza.com\/customer\/section\/load\/","cookieLifeTime":"3600","updateSessionUrl":"http:\/\/badabingpizza.com\/customer\/account\/updateSession\/"}}}
+				</script>
+				<script type="text/x-magento-init">
+    {
+        "body": {
+            "pageCache": {"url":"http:\/\/badabingpizza.com\/page_cache\/block\/render\/","handles":["default","cms_index_index","cms_page_view","cms_index_index_id_home"],"originalRequest":{"route":"cms","controller":"index","action":"index","uri":"\/"},"versionCookieName":"private_content_version"}        }
+    }
+
+				</script>
+				<div class="carousel-home">
+					<div class="item">
+						<img src="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/images/slides/slide1.png"
+						     alt=""/>
+						<div class="block-position">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-7">
+										<div class="top">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="white-line"></div>
+												</div>
+												<div class="col-sm-6">
+													<p class="yellow-uppercase-text">Limited Time Offer</p>
+												</div>
+												<div class="col-sm-3">
+													<div class="white-line"></div>
+												</div>
+											</div>
+										</div>
+										<p class="text-slide1">two toppings, 10 wings, 2 liter</p>
+										<div class="text-slide2">FOR <span class="small">$</span>27.99 only</div>
+										<div class="bottom">
+											<div class="row">
+												<div class="col-sm-3 first">
+													<div class="white-line"></div>
+												</div>
+												<div class="col-sm-6">
+													<div class="logo-img-in-slider">
+														<img src="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/images/logo-slide.png"
+														     alt=""/>
+													</div>
+												</div>
+												<div class="col-sm-3 second">
+													<div class="white-line"></div>
+												</div>
+											</div>
+										</div>
+										<div class="button-block"><a class="green-button w179 button-center">Order
+												now</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/images/slides/slide1.png"
+						     alt=""/>
+						<div class="block-position">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-7">
+										<div class="top">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="white-line"></div>
+												</div>
+												<div class="col-sm-6">
+													<p class="yellow-uppercase-text">Limited Time Offer</p>
+												</div>
+												<div class="col-sm-3">
+													<div class="white-line"></div>
+												</div>
+											</div>
+										</div>
+										<p class="text-slide1">two toppings, 10 wings, 2 liter</p>
+										<div class="text-slide2">FOR <span class="small">$</span>27.99 only</div>
+										<div class="bottom">
+											<div class="row">
+												<div class="col-sm-3 first">
+													<div class="white-line"></div>
+												</div>
+												<div class="col-sm-6">
+													<div class="logo-img-in-slider">
+														<img src="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/images/logo-slide.png"
+														     alt=""/>
+													</div>
+												</div>
+												<div class="col-sm-3 second">
+													<div class="white-line"></div>
+												</div>
+											</div>
+										</div>
+										<div class="button-block"><a class="green-button w179 button-center">Order
+												now</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/images/slides/slide1.png"
+						     alt=""/>
+						<div class="block-position">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-7">
+										<div class="top">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="white-line"></div>
+												</div>
+												<div class="col-sm-6">
+													<p class="yellow-uppercase-text">Limited Time Offer</p>
+												</div>
+												<div class="col-sm-3">
+													<div class="white-line"></div>
+												</div>
+											</div>
+										</div>
+										<p class="text-slide1">two toppings, 10 wings, 2 liter</p>
+										<div class="text-slide2">FOR <span class="small">$</span>27.99 only</div>
+										<div class="bottom">
+											<div class="row">
+												<div class="col-sm-3 first">
+													<div class="white-line"></div>
+												</div>
+												<div class="col-sm-6">
+													<div class="logo-img-in-slider">
+														<img src="http://badabingpizza.com/pub/static/frontend/SolidBrain/BadaBingPizza/en_US/images/logo-slide.png"
+														     alt=""/>
+													</div>
+												</div>
+												<div class="col-sm-3 second">
+													<div class="white-line"></div>
+												</div>
+											</div>
+										</div>
+										<div class="button-block"><a class="green-button w179 button-center">Order
+												now</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<script type="text/javascript">
+					require([
+						"jquery"
+					], function ($) {
+						$(document).ready(function () {
+
+							$('.carousel-home').owlCarousel({
+								items: 1,
+								itemsTablet: [768, 1],
+								itemsDesktopSmall: [979, 1],
+								itemsDesktop: [1199, 1],
+								pagination: true,
+								autoHeight: true
+							});
+						});
+					});
+
+
+				</script>
+				<div class="container">
+					<div class="row block-home">
+						<div class="col-md-4 col-sm-6">
+							<div class="block our-menu">
+								<div class="block-img"><img
+											src="http://badabingpizza.com/pub/media/wysiwyg/_6A40D652D5C0659BA7801BC690D4E5E574A153AAB8A22ABB11_pimgpsh_fullsize_distr.jpg"
+											alt=""/></div>
+								<div class="caption"><a class="green-button view">VIEW MENU</a> <a class="green-button">CATERING
+										MENU</a></div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="block our-menu">
+								<div class="block-img"><img src="http://badabingpizza.com/pub/media/wysiwyg/block2.png"
+								                            alt=""/></div>
+								<div class="caption">
+									<p class="get black-uppercase-text"><span>GET <span class="red">10% OFF $50</span> OR MORE</span>
+									</p>
+									<a class="green-button w179 button-right">ACTIVATE</a></div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="block our-menu">
+								<div class="block-img"><img
+											src="http://badabingpizza.com/pub/media/wysiwyg/_4600508C1ABA6F421479B83A19CBB204A8EAA8741ADDF87379_pimgpsh_fullsize_distr.jpg"
+											alt="" height="150"/></div>
+								<div class="caption">
+									<p class="get black-uppercase-text"><span>Let us know how we did</span></p>
+									<a class="green-button w179 button-right">CONTACT US</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="block-home2-wrap">
+					<div class="container">
+						<div class="row block-home2">
+							<div class="col-sm-3">
+								<div class="block-home2-item">
+									<div class="block-home2-img"><img
+												src="http://badabingpizza.com/pub/media/wysiwyg/imgonline-com-ua-Resize-2h8RF374mSJSRu.png"
+												alt=""/></div>
+									<div class="caption bg_transparent">
+										<p class="block-home2-title black-uppercase-text">WE <span
+													class="red">CATER</span></p>
+										<p class="block-home2-description">If you love fresh Italian food and enjoy an
+											exciting dining atmosphere, then you will love Brioso Fresh Pasta.</p>
+									</div>
+									<a class="green-button w179 button-center">Signup now</a></div>
+							</div>
+							<div class="col-sm-3">
+								<div class="block-home2-item">
+									<div class="block-home2-img"><img
+												src="http://badabingpizza.com/pub/media/wysiwyg/block22.png" alt=""/>
+									</div>
+									<div class="caption bg_transparent">
+										<p class="block-home2-title black-uppercase-text"><span
+													class="red">GIFT CARDS </span>AVAILABLE</p>
+										<p class="block-home2-description"><span>If ordering takeout and a gift card, you will be able to pickup at location when you pickup order. If your just purchasing ONLY a gift card, the gift card will be mailed to the address specified at checkout</span>
+										</p>
+									</div>
+									<a class="green-button w179 button-center">Order now</a></div>
+							</div>
+							<div class="col-sm-3">
+								<div class="block-home2-item">
+									<div class="block-home2-img"><img class="follow_us_icon_home"
+									                                  src="http://badabingpizza.com/pub/media/wysiwyg/home/follow_icon.png"
+									                                  alt=""/></div>
+									<div class="caption bg_transparent">
+										<p class="block-home2-title black-uppercase-text">FOLLOW US</p>
+										<p class="block-home2-description">Follow us on social media to get special VIP
+											promotions you and your friends will enjoy.</p>
+									</div>
+									<a class="green-button w179 button-center">Connect</a></div>
+							</div>
+							<div class="col-sm-3">
+								<div class="block-home2-item">
+									<div class="block-home2-img"><img
+												src="http://badabingpizza.com/pub/media/wysiwyg/block24.png" alt=""/>
+									</div>
+									<div class="caption bg_transparent">
+										<p class="block-home2-title black-uppercase-text">About us</p>
+										<p class="block-home2-description">Brioso Pasta offers a unique and authentic
+											Italian Fresh Casual experience allowing guests to enjoy a relaxing
+											authentic Italian atmosphere while watching individual meals being prepared
+											&ldquo;sous vide&rdquo; style.</p>
+									</div>
+									<a class="green-button w179 button-center">view more</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="page-footer">
+		<div class="footer content">
+			<div class="block newsletter">
+				<div class="title"><strong>Newsletter</strong></div>
+				<div class="content">
+					<form class="form subscribe"
+					      novalidate
+					      action="http://badabingpizza.com/newsletter/subscriber/new/"
+					      method="post"
+					      data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+					      id="newsletter-validate-detail">
+						<div class="field newsletter">
+							<label class="label" for="newsletter"><span>Sign Up for Our Newsletter:</span></label>
+							<div class="control">
+								<input name="email" type="email" id="newsletter"
+								       placeholder="Enter your email address"
+								       data-validate="{required:true, 'validate-email':true}"/>
+							</div>
+						</div>
+						<div class="actions">
+							<button class="action subscribe primary" title="Subscribe" type="submit">
+								<span>Subscribe</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<ul class="footer links">
+				<li class="nav item"><a href="http://badabingpizza.com/privacy-policy-cookie-restriction-mode/">Privacy
+						and Cookie Policy</a></li>
+				<li class="nav item"><a href="http://badabingpizza.com/search/term/popular/">Search Terms</a></li>
+				<li class="nav item"><a href="http://badabingpizza.com/contact/">Contact Us</a></li>
+				<li class="nav item"><a href="http://badabingpizza.com/sales/guest/form/">Orders and Returns</a></li>
+				<li class="nav item"><a href="http://badabingpizza.com/catalogsearch/advanced/"
+				                        data-action="advanced-search">Advanced Search</a></li>
+			</ul>
+			<div class="row links-row">
+				<div class="col-sm-6">
+					<a href="" class="contact-us-img"></a>
+					<a href="" class="contact-us">Contact us</a>
+				</div>
+				<div class="col-sm-6">
+					<div class="connect">
+						<span>Connect with us</span>
+						<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+						<a href="" class="instag"></a>
+
+					</div>
+					<div class="offers">
+						<span>Text & Email Offers</span>
+						<a href="" class="sms"></a>
+						<a href="" class="envelope"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="wrap-copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<ul class="footer-menu">
+						<li><a href="">Contact us</a></li>
+						<li><a href="">About us</a></li>
+						<li><a href="">Franchise Opportunities</a></li>
+						<li><a href="">Blog</a></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<small class="copyright">
+		<span>Store Finder | Locations | Offers | Allergen info | Investor Relations | Privacy Statement | Cookie Policy
+© 2016 Bada Bing Pizza. All rights reserved. Terms and conditions </span>
+		</small>
+	</div>
+</div>
+</body>
+</html>
